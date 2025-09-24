@@ -15,6 +15,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  font-size: 16px;
 }
 
 .container {
@@ -100,7 +101,7 @@ body {
 }
 
 .general {
-  padding: 50px0px;
+  padding: 50px 0;
   text-align: center;
 }
 .general-content {
@@ -110,48 +111,83 @@ body {
 }
 
 .general-bg {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 450px;
   height: 450px;
-  padding: 150px 55px;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 .general-1 {
   background-image: url(img/r1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 450px;
+  height: 450px;
 }
 .general-2 {
   background-image: url(img/r2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 450px;
+  height: 450px;
 }
 .general-3 {
   background-image: url(img/r3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 450px;
+  height: 450px;
 }
 .general-4 {
   background-image: url(img/r4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 450px;
+  height: 450px;
 }
 .general-5 {
   background-image: url(img/r5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 450px;
+  height: 450px;
 }
 .general-6 {
   background-image: url(img/r6.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 450px;
+  height: 450px;
 }
 h2 {
   font-size: 70px;
   text-transform: uppercase;
   color: var(--color-tres);
 }
+.txt {
+  margin: 0 auto;
+}
 .txt h3 {
+  padding-top: 140px;
   font-size: 18px;
   color: var(--color-one);
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 .txt p {
+  max-width: 240px;
+  margin: 0 auto;
   color: var(--color-four);
   font-size: 16px;
 }
 
 .info-bg {
-  padding: 250px0px;
+  padding: 250px 0px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -171,6 +207,7 @@ span {
   justify-content: space-between;
   margin-top: 55px;
 }
+
 .circle-txt {
   width: 25%;
   display: flex;
@@ -203,21 +240,20 @@ span {
   display: flex;
   align-items: center;
   text-align: left;
-  margin-top: 35px;
+  margin: 35px 20px 0 20px;
 }
+.testi-right,
 .testi-left {
   width: 50%;
-  padding-right: 25px;
+  /* padding: 0 0 0; */
 }
-.testi-right {
-  width: 50%;
-  padding-left: 35px;
-}
+
 .testi-txt {
-  margin-bottom: 25px;
+  /* padding: 0 0 0; */
+  margin: 20px 0;
 }
 .testi-txt img {
-  width: 50px;
+  width: 100px;
   margin-bottom: 15px;
 }
 .testi-txt h3 {
@@ -225,12 +261,11 @@ span {
   color: var(--color-one);
 }
 .testi-txt p {
-  font-size: 16px;
   color: var(--color-four);
 }
 
 .footer {
-  padding: 100px0px0px0px;
+  padding: 100px 0px 0px 0px;
   text-align: center;
 }
 .form {
@@ -262,7 +297,7 @@ span {
   font-size: 16px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
   .menu {
     padding: 30px;
   }
@@ -283,13 +318,15 @@ span {
   #menu:checked ~ .navbar {
     display: initial;
   }
-
   h2 {
     font-size: 40px;
   }
   .txt h3,
   .testi-txt h3 {
     font-size: 16px;
+  }
+  .testi-txt img {
+    width: 80px;
   }
   .txt p,
   .circle-txt p,
@@ -298,7 +335,7 @@ span {
   }
 
   .header {
-    min-height: 0pxvh;
+    min-height: 0vh;
   }
   .header-content {
     padding: 100px 30px;
@@ -311,7 +348,7 @@ span {
   }
 
   .general {
-    padding: 30px 30px0px 30px;
+    padding: 30px 30px 0px 30px;
   }
   .general-content {
     flex-direction: column;
@@ -319,9 +356,11 @@ span {
     margin-top: 20px;
   }
   .general-bg {
-    height: 380px;
-    padding: 90px 55px;
-    margin-bottom: 30px;
+    padding: 80px 80px;
+    margin-bottom: 10px;
+  }
+  .txt h3 {
+    padding-top: 55px;
   }
 
   .info-1 {
@@ -341,6 +380,7 @@ span {
   .g2 {
     margin-top: -120px;
   }
+
   .info-2 {
     padding: 280px 30px;
     background-size: cover;
@@ -360,17 +400,35 @@ span {
 
   .footer {
     padding: 0px;
-    margin-top: -100px;
+    margin-top: -40px;
   }
   form {
     display: flex;
     flex-direction: column;
-    padding: 0px 50px;
+    /* padding: 0px 100px; */
   }
   .campo {
-    margin: 0px0px 10px0px;
+    margin: 0px 10px 0px;
+  }
+  .btn-2 {
+    max-width: 130px;
+    margin: 0 auto;
   }
   .footer-txt {
-    margin-top: 30px;
+    margin: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .general-bg {
+    width: 320px;
+    height: 320px;
+  }
+  .txt h3 {
+    padding-top: 0;
+    font-size: 16px;
+  }
+  .txt p {
+    max-width: 300px;
+    font-size: 12px;
   }
 }

@@ -1,0 +1,376 @@
+:root {
+  --color-one: #fffdfc;
+  --color-dos: #bebebe;
+  --color-tres: #1b293a;
+  --color-four: #ebebeb;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.header {
+  background-image: url(img/bg.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+.menu {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+.logo {
+  color: var(--color-one);
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+}
+.menu .navbar ul li a {
+  font-size: 18px;
+  padding: 20px;
+  color: var(--color-one);
+  display: block;
+  font-weight: 600;
+}
+#menu {
+  display: none;
+}
+.menu-icono {
+  width: 25px;
+}
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+.header-txt {
+  text-align: center;
+}
+.header-txt h1 {
+  font-size: 85px;
+  color: var(--color-one);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.header-txt p {
+  color: var(--color-dos);
+  font-size: 16px;
+  padding: 0px 250px;
+  margin-bottom: 45px;
+}
+
+.btn-1 {
+  display: inline-block;
+  padding: 12px 45px;
+  border: 1px solid var(--color-one);
+  color: var(--color-one);
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.btn-1:hover {
+  color: var(--color-tres);
+  background-color: var(--color-one);
+}
+
+.general {
+  padding: 50px0px;
+  text-align: center;
+}
+.general-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 55px;
+}
+
+.general-bg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  padding: 150px 55px;
+}
+.general-1 {
+  background-image: url(img/r1.png);
+}
+.general-2 {
+  background-image: url(img/r2.png);
+}
+.general-3 {
+  background-image: url(img/r3.png);
+}
+.general-4 {
+  background-image: url(img/r4.png);
+}
+.general-5 {
+  background-image: url(img/r5.png);
+}
+.general-6 {
+  background-image: url(img/r6.png);
+}
+h2 {
+  font-size: 70px;
+  text-transform: uppercase;
+  color: var(--color-tres);
+}
+.txt h3 {
+  font-size: 18px;
+  color: var(--color-one);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.txt p {
+  color: var(--color-four);
+  font-size: 16px;
+}
+
+.info-bg {
+  padding: 250px0px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.info-1 {
+  background-image: url(img/bg2.png);
+}
+.info-content {
+  text-align: center;
+}
+.info-content h2,
+span {
+  color: var(--color-one);
+}
+.info-circle {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 55px;
+}
+.circle-txt {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0px 10px;
+}
+.circle-1 {
+  display: block;
+  height: 100px;
+  width: 100px;
+  border: 1px solid var(--color-one);
+  border-radius: 50%;
+  padding-top: 35px;
+}
+.circle-1 h3 {
+  color: var(--color-four);
+  font-size: 16px;
+}
+.circle-txt p {
+  color: var(--color-one);
+  margin-top: 25px;
+}
+
+.info-2 {
+  background-image: url(img/bg3.png);
+}
+.testi {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-top: 35px;
+}
+.testi-left {
+  width: 50%;
+  padding-right: 25px;
+}
+.testi-right {
+  width: 50%;
+  padding-left: 35px;
+}
+.testi-txt {
+  margin-bottom: 25px;
+}
+.testi-txt img {
+  width: 50px;
+  margin-bottom: 15px;
+}
+.testi-txt h3 {
+  font-size: 20px;
+  color: var(--color-one);
+}
+.testi-txt p {
+  font-size: 16px;
+  color: var(--color-four);
+}
+
+.footer {
+  padding: 100px0px0px0px;
+  text-align: center;
+}
+.form {
+  margin-top: 35px;
+}
+.campo {
+  margin-right: 10px;
+  padding: 17px 35px;
+  border: 2px solid var(--color-four);
+  outline: none;
+  color: var(--color-tres);
+}
+.campo::placeholder {
+  color: var(--color-dos);
+}
+.btn-2 {
+  padding: 17px 35px;
+  border: 2px solid var(--color-tres);
+  background-color: var(--color-tres);
+  color: var(--color-four);
+}
+.footer-txt {
+  margin-top: 100px;
+  border-top: 1px solid var(--color-dos);
+  padding: 20px0px;
+}
+.footer-txt p {
+  color: var(--color-tres);
+  font-size: 16px;
+}
+
+@media (max-width: 991px) {
+  .menu {
+    padding: 30px;
+  }
+  .menu label {
+    display: initial;
+  }
+  .menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    right: 0px;
+    background-color: var(--color-tres);
+    display: none;
+  }
+  .menu .navbar ul li {
+    width: 100%;
+  }
+  #menu:checked ~ .navbar {
+    display: initial;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+  .txt h3,
+  .testi-txt h3 {
+    font-size: 16px;
+  }
+  .txt p,
+  .circle-txt p,
+  .testi-txt p {
+    font-size: 15px;
+  }
+
+  .header {
+    min-height: 0pxvh;
+  }
+  .header-content {
+    padding: 100px 30px;
+  }
+  .header-txt h1 {
+    font-size: 50px;
+  }
+  .header-txt p {
+    padding: 0px;
+  }
+
+  .general {
+    padding: 30px 30px0px 30px;
+  }
+  .general-content {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .general-bg {
+    height: 380px;
+    padding: 90px 55px;
+    margin-bottom: 30px;
+  }
+
+  .info-1 {
+    padding: 200px 30px;
+    background-size: cover;
+    margin-top: -110px;
+  }
+  .info-circle {
+    flex-direction: column;
+    align-items: center;
+  }
+  .circle-txt {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
+  .g2 {
+    margin-top: -120px;
+  }
+  .info-2 {
+    padding: 280px 30px;
+    background-size: cover;
+    margin-top: -180px;
+  }
+  .testi {
+    flex-direction: column;
+  }
+  .testi-left {
+    width: 100%;
+    padding-right: 0px;
+  }
+  .testi-right {
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .footer {
+    padding: 0px;
+    margin-top: -100px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px;
+  }
+  .campo {
+    margin: 0px0px 10px0px;
+  }
+  .footer-txt {
+    margin-top: 30px;
+  }
+}

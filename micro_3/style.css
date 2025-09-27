@@ -1,0 +1,257 @@
+:root {
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300,400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  background-color: rgba(112, 112, 112, 0.1);
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 1000;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar {
+  justify-content: space-between;
+}
+.nav-links {
+  gap: 20px;
+}
+.nav-links a {
+  color: #fff;
+  display: inline-block;
+  padding: 15px 0;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  color: #ddd;
+}
+
+section {
+  padding-top: 80px;
+}
+
+.homepage {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url(img/home-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: contrast(80%);
+}
+
+.content {
+  position: relative;
+  height: 85%;
+  flex-direction: column;
+  justify-content: center;
+}
+.txt {
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 10px 0;
+}
+h2 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 10px;
+}
+h3 {
+  font-size: 1.4rem;
+  margin: 10px 0;
+}
+
+.homepage a {
+  background-color: #fff;
+  color: #333;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 5px 10px;
+  font-size: 18px;
+  transition: 0.3;
+  margin-top: 50px;
+}
+.homepage a:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.section-title {
+  text-align: center;
+}
+
+.cards {
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+.card {
+  width: calc(100% / 3 - 10px);
+  text-align: center;
+  padding: 40px 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 0px 5px 20px 5px;
+}
+.cards .card img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+.porfolio .card {
+  padding: 0 0 40px 0;
+}
+.porfolio .card img {
+  height: 240px;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.about .company-info {
+  margin-top: 30px;
+}
+.about ul {
+  padding-left: 20px;
+}
+
+.contact .row {
+  margin: 60px 0 90px;
+  justify-content: space-between;
+}
+.contact .row .col {
+  padding: 0 10px;
+  width: calc(100% / 2 - 50px);
+}
+.contact .row .col p {
+  color: #7a7a7a;
+  margin-bottom: 10px;
+}
+.contact .row .col p i {
+  margin-right: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  border: 1px solid #bfbf;
+}
+input {
+  height: 45px;
+}
+textarea {
+  height: 150px;
+}
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: #333;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: #5252;
+  transform: scale(1.1);
+}
+
+.footer {
+  background-color: #333;
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
+}
+
+/*
+*/
+#menu-toggler,
+#hamburger-btn {
+  display: none;
+}
+/* menu - responsivle */
+@media (width<860px) {
+  .navbar .nav-links {
+    position: fixed;
+    top: 45px;
+    height: 100%;
+    display: block;
+    background-color: #333;
+    width: 300px;
+    padding-left: 20px;
+    padding-top: 30px;
+    left: -100%;
+    transition: all 0.4s ease;
+  }
+  #menu-toggler:checked ~ .nav-links {
+    left: 0;
+  }
+  .nav-links {
+    font-size: 1.3rem;
+  }
+
+  #hamburger-btn {
+    display: block;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  section .cards .card {
+    width: calc(100% / 2 - 15px);
+  }
+  .contact .row {
+    flex-direction: column;
+  }
+  .contact .row .col {
+    width: 100%;
+  }
+  .contact .row .col:last-child {
+    margin-top: 40px;
+  }
+}
+@media (width<560px) {
+  section .cards .card {
+    width: 100%;
+  }
+}

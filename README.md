@@ -18,7 +18,7 @@
 -   https://drive.google.com/file/d/16-laWRP0xLBhC2-vEzaTtEuJKoJ1iQsy
 -   https://cdnjs.com/libraries/font-awesome
 
-**deploys**
+**deploys** https://flourishing-khapse-dd34fe.netlify.app/
 
 <br>
 

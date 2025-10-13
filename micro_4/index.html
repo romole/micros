@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="container">
+      <header class="content-header content-fixed">
+        <div class="content-header__nav">
+          <!-- NAV menu + toggle-->
+          <div class="content-header__nav-toggle">
+            <label for="check-toggle" class="c_nav__toggle-check--btn" id="j_menu-toggle">
+              <i class="fa-solid fa-bars fa-2x"></i>
+            </label>
+            <input type="checkbox" id="check-toggle" class="c_nav__toggle-check--input" />
+          </div>
+
+          <!-- logo + title -->
+          <div class="content-header__nav-logo">
+            <div class="c_logo__icono"></div>
+            <div class="c_logo__title">
+              <h1>GoDaddy</h1>
+            </div>
+          </div>
+
+          <!-- NAV menu -->
+          <ul class="content-header__nav-list c_nav c_nav__ul" id="j_menu-main">
+            <li class="c_nav__li">
+              <a class="c_nav__link" href="#">Domani Names</a>
+            </li>
+            <li class="c_nav__li">
+              <a class="c_nav__link" href="#">Website & Hosting</a>
+            </li>
+            <li class="c_nav__li">
+              <a class="c_nav__link" href="#">Commerce</a>
+            </li>
+            <li class="c_nav__li">
+              <a class="c_nav__link" href="#">Email $ Marketing</a>
+            </li>
+            <li class="c_nav__li">
+              <a class="c_nav__link" href="#">Expert Services</a>
+            </li>
+            <li class="c_nav__li">
+              <a class="c_nav__link" href="#">More</a>
+            </li>
+            <li class="c_nav__li--space">
+              <a class="c_nav__link" href="#"></a>
+            </li>
+            <li class="c_nav__li">
+              <a class="c_nav__link" href="#">Help Center</a>
+            </li>
+            <li class="c_nav__li">
+              <a class="c_nav__link" href="#">Sign In</a>
+            </li>
+            <li class="c_nav__li">
+              <i class="material-symbols-outlined">shopping_cart </i>
+            </li>
+          </ul>
+        </div>
+
+        <!-- search + offer -->
+        <div class="content-header__searchOffer">
+          <form action="#" class="c_form">
+            <input class="c_form__input" type="text" placeholder="Type the domain you want" />
+            <button class="c_form__button" id="submit" type="submit">Send Domain</button>
+          </form>
+
+          <!-- offer -->
+          <ul class="c_offer">
+            <li class="c_offer__domain">
+              .online
+              <span class="c_offer__price">$0.99</span>
+            </li>
+            <li class="c_offer__domain c_offer__domain--strong">
+              .net
+              <span class="c_offer__price">$14.99</span>
+            </li>
+            <li class="c_offer__domain c_offer__domain--strong">
+              .inc
+              <span class="c_offer__price">$99.99</span>
+            </li>
+            <li class="c_offer__price c_offer__icon">
+              <span class="c_offer__price">$11.99</span>
+            </li>
+          </ul>
+        </div>
+      </header>
+    </div>
+
+    <!-- TOOLS + PRODUCTS -->
+    <div class="container">
+      <!-- tools -->
+      <section class="content-tools">
+        <!-- card IZQ -->
+        <div class="content-tools__lh content-tools__lh-img">
+          <div class="c_card">
+            <h5 class="c_card__title--sub">Websites & Commerce</h5>
+            <h2 class="c_card__title c_card__title--xl">Tools for all your business firsts</h2>
+            <p>Website and store solutions for any small business</p>
+            <div class="c_card__btn">
+              <button class="c_form__button c_form__button--b">Get Started</button>
+              <p>Learn More</p>
+            </div>
+            <div class="c_card__footer">No credit card required**</div>
+          </div>
+        </div>
+
+        <!-- card DCH -->
+        <div class="content-tools__rh">
+          <div class="c_card">
+            <h5 class="c_card__title--sub">Domain Names</h5>
+            <h3 class="c_card__title">Grab a .com for just $0.01*/1st yr</h3>
+            <p>2-year purchase required*</p>
+            <div class="c_card__btn">
+              <button class="c_form__button c_form__button--b">Find Your Domain</button>
+              <p>Tranfer your Domains</p>
+            </div>
+            <div class="c_card__footer">Domains include free privacy protection forever* ?</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- products sale -->
+      <secction class="content-tools__prods">
+        <ul class="c_prods">
+          <li class="c_prods__item">Domains</li>
+          <li class="c_prods__item">SSL Security</li>
+          <li class="c_prods__item">Websites</li>
+          <li class="c_prods__item">WordPress</li>
+          <li class="c_prods__item">Email & Microsoft 365</li>
+          <li class="c_prods__item">Website Design Services</li>
+          <li class="c_prods__item">Online Store</li>
+          <li class="c_prods__item">Web Hosting</li>
+        </ul>
+
+        <div class="c_card c_card--prods">
+          <h2 class="c_card__title">.Shop</h2>
+          <p>Sale! $0.99*/1st yr.</p>
+          <div class="c_card__footer break-line">Attract shoppers. <span>Sell more stuff.</span></div>
+        </div>
+      </secction>
+    </div>
+
+    <!-- SUCCESS -->
+    <div class="container">
+      <section class="content-success">
+        <!-- column IZQ -->
+        <div class="content-success__lh">
+          <div class="content-success__title">
+            <h2 class="">Success in <br />3 easy steps.</h2>
+          </div>
+
+          <div class="content-success__two">
+            <img class="c_img-linked" src="img/s_pexels-mizunokozuki-12903256.webp" alt="woman standing working" />
+
+            <div class="c_card c_card--success">
+              <h5 class="c_card__title--sub">02</h5>
+              <h3 class="c_card__title">Save with the lowest fees</h3>
+              <p>2.3% + 0&cent; per in-person transation.</p>
+              <p>2.3% + 30&cent; per online transation.</p>
+              <p>Enjoy the lowest transation fees compared to other leading providers</p>
+              <div class="c_card__btn">
+                <button class="c_form__button c_form__button--b">Start Getting Paid</button>
+                <p>Learn More</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- column DCH -->
+        <div class="content-success__rh">
+          <div class="content-success__one">
+            <img class="c_img-linked" src="img/s_pexels-visitalmaty-848681.webp" alt="woman enjoying the snow" />
+
+            <div class="c_card c_card--success">
+              <h5 class="c_card__title--sub">01</h5>
+              <h3 class="c_card__title">Sell online with a website</h3>
+              <p>Sell anything, from physical products to downloads and services, and manage it all in one place.</p>
+              <div class="c_card__btn">
+                <button class="c_form__button c_form__button--b">Start Getting Paid</button>
+                <p>Learn More</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-success__three">
+            <img class="c_img-linked" src="img/s_pexels-sumup-payments-1805290812-28376835.webp" alt="paying by card" />
+
+            <div class="c_card c_card--success">
+              <h5 class="c_card__title--sub">03</h5>
+              <h3 class="c_card__title">Sell in-person and on the go</h3>
+              <p>Our new Point of Sale devices are designed to fit any business and budget. Choose the one that's right for you.</p>
+              <div class="c_card__btn">
+                <button class="c_form__button c_form__button--b">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- TEMPLATES -->
+    <div class="container">
+      <section class="content-templates">
+        <h2 class="c_card__title c_card__title--xl">Templete designed to sell</h2>
+        <p>Choose from 100s of designs for every idea and industry.</p>
+
+        <!-- slider img -->
+        <div class="content-templates__slider">
+          <div class="content-templates__slider-auto">
+            <div class="c_img-template">
+              <img src="img/t_pexels-cottonbro-7484819.webp" alt="template_1" />
+            </div>
+            <div class="c_img-template">
+              <img src="img/t_pexels-kseniachernaya-3965543.webp" alt="templete_2" />
+            </div>
+            <div class="c_img-template">
+              <img src="img/t_pexels-michael-burrows-7147538.webp" alt="templete_3" />
+            </div>
+            <div class="c_img-template">
+              <img src="img/t_pexels-picjumbo-com-55570-196645.webp" alt="templete_4" />
+            </div>
+            <div class="c_img-template">
+              <img src="img/t_pexels-stock-photos-6c3d5eb0cbed47e1bdf44ff85ebd9cd4669f50b895b3c6e76a23a4fd43852099.webp" alt="templete_5" />
+            </div>
+            <div class="c_img-template">
+              <img src="img/t_pexels-leeloothefirst-7598019.jpg" alt="templete_6" />
+            </div>
+            <!-- reply img -->
+            <div class="c_img-template">
+              <img src="img/t_pexels-cottonbro-7484819.webp" alt="template_1" />
+            </div>
+            <div class="c_img-template">
+              <img src="img/t_pexels-kseniachernaya-3965543.webp" alt="templete_2" />
+            </div>
+            <div class="c_img-template">
+              <img src="img/t_pexels-michael-burrows-7147538.webp" alt="templete_3" />
+            </div>
+            <div class="c_img-template">
+              <img src="img/t_pexels-picjumbo-com-55570-196645.webp" alt="templete_4" />
+            </div>
+            <div class="c_img-template">
+              <img src="img/t_pexels-stock-photos-6c3d5eb0cbed47e1bdf44ff85ebd9cd4669f50b895b3c6e76a23a4fd43852099.webp" alt="templete_5" />
+            </div>
+            <div class="c_img-template">
+              <img src="img/t_pexels-leeloothefirst-7598019.jpg" alt="templete_6" />
+            </div>
+          </div>
+        </div>
+
+        <div class="c_card__btn">
+          <button class="c_form__button c_form__button--b">Browse All Templates</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="container">
+      <footer class="content-footer">
+        <!-- footer-search -->
+        <div class="content-footer__search">
+          <!-- footer-search input-->
+          <div class="content-footer__search--input">
+            <h3>Sign up for news and special offers</h3>
+
+            <form action="#" class="c_form">
+              <input class="c_form__input" type="text" placeholder="Email address" />
+              <button class="c_form__button c_form__button--w" id="submit" type="submit">Sign Up</button>
+            </form>
+          </div>
+
+          <!-- footer-search logo-->
+          <div class="content-footer__search--logo">
+            <h3>We love taking your call.</h3>
+            <div class="content__logo">
+              <div class="c_logo__icono c_logo__icono--xl c_logo__icono--w"></div>
+              <div class="c_logo__title">
+                <h2>GoDaddy</h2>
+              </div>
+              <h3>&nbsp;guides</h3>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <!-- footer-sitemap -->
+        <div class="content-footer__sitemap">
+          <div>
+            <h4>About GoDaddy</h4>
+            <ul>
+              <li>About Us</li>
+              <li>Newsroom</li>
+              <li>Investor Relations</li>
+              <li>Careers</li>
+              <li>Corporate Responsibility</li>
+              <li>Trust Center</li>
+              <li>Legal</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Help Center</h4>
+            <ul>
+              <li>Help Center</li>
+              <li>Community</li>
+              <li>Venture Forward: Microbusiness Data</li>
+              <li>GoDaddy Blog</li>
+              <li>Contact Us</li>
+              <li>Reporte Abuse</li>
+              <li>Resources</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Resources</h4>
+            <ul>
+              <li>Webmail</li>
+              <li>WHOIS</li>
+              <li>GoDaddy Mobile App</li>
+              <li>ICANN Confirmation</li>
+              <li>Designers & Developers</li>
+              <li>Corporate Domains</li>
+              <li>Redeem Code</li>
+              <li>Product Catalog</li>
+              <li>Videos</li>
+              <li>Business Name Generator</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Partner Programs</h4>
+            <ul>
+              <li>Affiliates</li>
+              <li>Reseller Programs</li>
+              <li>GoDaddy Pro</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Account</h4>
+            <ul>
+              <li>My Products</li>
+              <li>Renewals & Billing</li>
+              <li>Create Account</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Shopping</h4>
+            <ul>
+              <li>Buy Domain</li>
+              <li>Websites</li>
+              <li>WordPress</li>
+              <li>Hosting</li>
+              <li>Web Security</li>
+              <li>Email & Office</li>
+              <li>Phone Numbers</li>
+              <li>Promos</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- footer-social -->
+        <div class="content-footer__social">
+          <!-- social @ logo -->
+          <div class="content-footer__social-logo">
+            <div class="content__logo">
+              <div class="c_logo__icono c_logo__icono--m c_logo__icono--w"></div>
+              <div class="c_logo__title">
+                <h2>GoDaddy</h2>
+              </div>
+            </div>
+          </div>
+
+          <!-- social @ idiom -->
+          <div class="content-footer__social-idiom">
+            <h5>United States - English</h5>
+            <span>&nbsp;</span>
+            <i class="fa-solid fa-chevron-up fa-2xs"></i>
+            <span>&nbsp;&nbsp;</span>
+            <h5>USD</h5>
+            <span>&nbsp;</span>
+            <i class="fa-solid fa-chevron-up fa-2xs"></i>
+          </div>
+
+          <!-- social @ icon -->
+          <div class="content-footer__social-icon">
+            <i class="fa-brands fa-facebook fa-2x"></i>
+            <i class="fa-brands fa-instagram fa-2x"></i>
+            <i class="fa-brands fa-twitter fa-2x"></i>
+            <i class="fa-brands fa-youtube fa-2x"></i>
+          </div>
+        </div>
+
+        <hr />
+
+        <!-- footer-copyright -->
+        <div class="content-footer__copyright">
+          <div class="content-footer__copyright-rights">
+            <p>
+              Copyright &copy; 1999-2023
+              <span>
+                Lorem ipsum dolor sit consectetur adipisicing elit. Voluptate placeat cumque nam? Veritatis voluptatem ipsa eligendi, consequuntur aliquid
+                soluta eos nobis dolorem dolores explicabo corrupti quibusdam.
+              </span>
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, perferendis? <a href="#">Universal Terms Of Services</a></p>
+          </div>
+
+          <div class="content-footer__copyright-notices">
+            <ul>
+              <li><a href="#">Legal</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Cookies</a></li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!--  -->
+    <script src="script.js"></script>
+  </body>
+</html>

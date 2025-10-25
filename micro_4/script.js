@@ -3,9 +3,10 @@ const mainMenuElement = document.getElementById("j_menu-main");
 
 toggleMenuElement.addEventListener("click", () => {
   mainMenuElement.classList.toggle("c_nav__ul--show");
-  console.log("show");
+  // console.log("show");
 });
 
+// scroll mouse off/on
 mainMenuElement.addEventListener(
   "wheel",
   (event) => {

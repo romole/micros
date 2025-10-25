@@ -35,6 +35,14 @@ https://imagen.online-convert.com/es/convertir-a-webp
 
 **deploys** https://keen-marzipan-618dbf.netlify.app
 
+## micro_5
+
+-   design of .. popup + carousel = lightbox
+
+> On this occasion, only one of the games is shown as a practical solution. The rest have been omitted.
+
+**deploys** https://chimerical-torrone-7592d4.netlify.app
+
 <br>
 
 ### source

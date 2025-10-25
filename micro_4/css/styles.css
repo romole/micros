@@ -19,6 +19,7 @@ html {
   font-size: 16px;
   background-color: white;
   color: black;
+  scroll-snap-type: y mandatory;
 }
 
 body {
@@ -680,4 +681,9 @@ ul {
     content: "\a";
     white-space: pre;
   }
+}
+
+.snap {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
 }/*# sourceMappingURL=styles.css.map */
